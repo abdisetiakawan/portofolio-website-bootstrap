@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Website - Abdi Setiawan</title>
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendors/boxicons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light py-4 shadow sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold custom-letter-spacing" href="#"
+          >Bedikadir</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myskill">My skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href="#contact"
+            class="btn btn-outline-contact my-2 my-sm-0"
+            role="button"
+          >
+            Contact Me!
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <section class="header-section bg-light" id="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+            <p class="text-orange fw-semibold fs-5">Abdi Setiawan</p>
+            <h1 class="header-title text-uppercase fw-bold">
+              Programmer Jago <br class="d-none d-md-block" />asal Ind<span
+                class="text-danger"
+                >one</span
+              >sia
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              laborum itaque exercitationem error rerum cum commodi suscipit
+              magni nisi quasi, veniam culpa iste. Accusamus sed sit suscipit
+              quis, vero quam.
+            </p>
+            <a href="#" class="header-skill d-inline-flex align-items mt-4">
+              <button class="btn btn-custom fw-light my-sm-0" type="submit">
+                Get in Touch
+              </button>
+            </a>
+          </div>
+          <div class="col-md-5">
+            <img src="images/header-image.jpg" class="custom-image" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Skill -->
+    <section class="myskill-section" id="myskill">
+      <div class="container">
+        <p class="text-orange fw-semibold">My Skills</p>
+        <h2 class="section-title mb-5">My Expertise</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card bg-light card-hover h-100">
+              <div class="card-body">
+                <!-- Tambahkan ikon dari Boxicons -->
+                <i class="bx bxl-javascript fs-1 text-orange bx-lg"></i>
+                <h5 class="card-title mt-3">JavaScript</h5>
+                <p class="card-text fs-7 pt-2">
+                  Mampu mengembangkan aplikasi web dinamis dengan JavaScript,
+                  termasuk manipulasi DOM, AJAX, dan penggunaan framework modern
+                  seperti React atau Vue.js.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-light card-hover h-100">
+              <div class="card-body">
+                <!-- Tambahkan ikon dari Boxicons -->
+                <i class="bx bxl-python fs-1 text-orange bx-lg"></i>
+                <h5 class="card-title mt-3">Python</h5>
+                <p class="card-text fs-7 pt-2">
+                  Berpengalaman dalam pengembangan backend dan analisis data
+                  dengan Python, menggunakan framework seperti Django atau
+                  Flask.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-light card-hover h-100">
+              <div class="card-body">
+                <!-- Tambahkan ikon dari Boxicons -->
+                <i class="bx bxl-c-plus-plus fs-1 text-orange bx-lg"></i>
+                <h5 class="card-title mt-3">C++</h5>
+                <p class="card-text fs-7 pt-2">
+                  Menguasai C++ untuk pengembangan perangkat lunak sistem,
+                  dengan fokus pada efisiensi memori dan kinerja tinggi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-light card-hover h-100">
+              <div class="card-body">
+                <!-- Tambahkan ikon dari Boxicons -->
+                <i class="bx bxl-java fs-1 text-orange bx-lg"></i>
+                <h5 class="card-title mt-3">Java</h5>
+                <p class="card-text fs-7 pt-2">
+                  Berpengalaman dalam pengembangan aplikasi berbasis Java,
+                  termasuk pengembangan aplikasi Android dan aplikasi enterprise
+                  dengan Spring.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me -->
+    <section class="about-section bg-light" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="images/about-img.jpg" class="custom-image" alt="" />
+          </div>
+          <div class="col-md-5">
+            <h2 class="section-title mb-4">About Me</h2>
+            <p class="my-4">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem modi
+              provident ipsa fugiat. Sit perferendis nihil consequuntur
+              quibusdam voluptatum, earum dolore nam ea consectetur aut
+              voluptates, magnam placeat sed? Asperiores?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              dolore rerum quibusdam repellat laborum recusandae ratione? Sint,
+              id corrupti culpa architecto sequi esse dolorum error in quidem,
+              doloribus, asperiores aspernatur! Omnis, aliquam! Porro corrupti
+              quaerat cumque nulla alias repudiandae eaque ipsam, neque eum eius
+              impedit expedita, consequatur consequuntur. Id dicta officia unde
+              maxime, sed laborum nemo culpa doloremque quibusdam ad!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="text-orange fw-semibold">Recent Projects</p>
+        <h2 class="section-title">My Portfolio</h2>
+
+        <div class="swiper portfolio-swiper my-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="btn btn-outline-contact portfolio-button text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonial-section bg-light" id="testimonials">
+      <div class="container">
+        <p class="text-orange fw-semibold">Clients Feedback</p>
+        <h2 class="section-title mb-5">Customer Testimonials</h2>
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Dianne Russell"
+                  />
+                  <div>
+                    <strong>Dianne Russell</strong><br />
+                    <span>Starbucks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Dianne Russell"
+                  />
+                  <div>
+                    <strong>Dianne Russell</strong><br />
+                    <span>Starbucks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Dianne Russell"
+                  />
+                  <div>
+                    <strong>Dianne Russell</strong><br />
+                    <span>Starbucks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Kristin Watson"
+                  />
+                  <div>
+                    <strong>Kristin Watson</strong><br />
+                    <span>Louis Vuitton</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Kathryn Murphy"
+                  />
+                  <div>
+                    <strong>Kathryn Murphy</strong><br />
+                    <span>McDonald's</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="testimonial-card p-3 bg-white">
+                <div class="testimonial-stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra."
+                </p>
+                <div class="testimonial-profile">
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt="Kathryn Murphy"
+                  />
+                  <div>
+                    <strong>Kathryn Murphy</strong><br />
+                    <span>McDonald's</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact me -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="text-orange fw-semibold mb-3">Get in Touch</p>
+          <h2 class="section-title mb-3">Contact Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum
+            eos neque dolores nulla id at magnam odio consectetur!
+          </p>
+        </div>
+        <form>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="name">First name</label>
+              <input id="name" type="text" class="form-control" />
+            </div>
+            <div class="col">
+              <label for="name">Last name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <label for="email">Email address</label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+            <div class="col">
+              <label for="phone">Phone Number</label>
+              <input type="text" class="form-control" id="phone" />
+            </div>
+          </div>
+          <!-- Choose Topic Form -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="">Choose a Topic</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option value="" disabled selected>Choose one ...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <!-- Message (text area) -->
+          <div class="row mb-4">
+            <div class="col">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+          </div>
+          <!-- Submit -->
+          <div class="row mb-3">
+            <div class="col">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  I accept the terms and conditions
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-orange fw-light my-sm-0">
+                Sign in
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./styles/style.js"></script>
+    <script>
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".btn-prev",
+          prevEl: ".btn-next",
+        },
+        autoplay: {
+          // Menambahkan autoplay
+          delay: 3000, // Waktu delay antara setiap slide (dalam milidetik)
+          disableOnInteraction: false, // Memastikan autoplay tetap berjalan meskipun user berinteraksi dengan slider
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
