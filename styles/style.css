@@ -380,11 +380,24 @@ section .section-title {
   margin-top: 1.5rem;
   font-weight: 500;
   transition: all 0.3s ease;
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 2px solid #ff5d0e;
+}
+
+.view-project i {
+  transition: transform 0.3s ease;
 }
 
 .view-project:hover {
-  color: #ff4f4f;
-  transform: translateX(5px);
+  background-color: #ff5d0e;
+  color: white;
+  border-color: #ff5d0e;
+}
+
+.view-project:hover i {
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 768px) {
