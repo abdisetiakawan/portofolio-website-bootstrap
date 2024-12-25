@@ -273,10 +273,11 @@ section .section-title {
   background: white;
   border-radius: 16px;
   overflow: hidden;
+  width: 95%;
   transition: all 0.3s ease;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   max-width: 1000px; /* Limit maximum width */
-  margin: 0 auto; /* Center the card */
+  margin: 20px auto; /* Center the card */
 }
 
 .project-card:hover {
@@ -399,9 +400,74 @@ section .section-title {
 .view-project:hover i {
   transform: rotate(-45deg);
 }
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    margin-left: auto; /* Move burger menu to right */
+    margin-right: 0.5rem;
+  }
 
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  /* Move contact button inside collapsed menu on mobile */
+  .navbar .btn-outline-contact {
+    margin: 0.5rem auto;
+    display: block;
+    width: fit-content;
+  }
+}
+
+/* About Section Mobile Fixes */
 @media (max-width: 768px) {
-  .project-image-container {
-    padding-top: 56.25%; /* 16:9 aspect ratio for mobile */
+  .about-section .row {
+    flex-direction: column;
+  }
+
+  .about-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    order: -2; /* Move title to top */
+  }
+
+  .about-section .col-md-6 {
+    order: -1; /* Move image below title but above text */
+    margin-bottom: 2rem;
+  }
+
+  .about-section .col-md-5 {
+    text-align: center; /* Center text on mobile */
+  }
+}
+
+/* Programming Languages Section Mobile Fixes */
+@media (max-width: 768px) {
+  .programming-language-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programming-language-section .col-md-3 {
+    width: 50%; /* Make cards take 50% width (2 cards per row) */
+    padding: 0.5rem;
+  }
+
+  .programming-language-section .card {
+    height: 100%;
   }
 }
