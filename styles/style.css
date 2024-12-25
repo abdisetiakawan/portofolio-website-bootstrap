@@ -263,3 +263,132 @@ section .section-title {
 .swiper-pagination-bullet-active {
   background-color: #ff5d0e !important;
 }
+
+.portfolio-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Limit maximum width */
+  margin: 0 auto; /* Center the card */
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 45%; /* Adjusted height ratio */
+  overflow: hidden;
+  background-color: #f0f2f5;
+}
+
+.project-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Rest of your styles remain the same */
+.project-content {
+  padding: 2rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.tech-badge {
+  background: #ff5d0e;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.project-title {
+  color: #ff5d0e;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.role-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.role-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.role-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.role-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.role-icon {
+  color: #ff5d0e;
+  font-size: 1.25rem;
+}
+
+.role-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.view-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff5d0e;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-project:hover {
+  color: #ff4f4f;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .project-image-container {
+    padding-top: 56.25%; /* 16:9 aspect ratio for mobile */
+  }
+}
