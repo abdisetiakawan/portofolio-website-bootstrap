@@ -480,6 +480,44 @@ section .section-title {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .portfolio-swiper {
+    padding: 0 10px; /* Add padding on mobile */
+  }
+
+  .portfolio-swiper .swiper-wrapper {
+    margin-bottom: 20px; /* Add space for navigation buttons */
+  }
+
+  .swiper-slide {
+    width: 100% !important; /* Force full width on mobile */
+  }
+
+  /* Show only one slide per view on mobile */
+  .portfolio-swiper .swiper-slide {
+    width: 100% !important;
+  }
+
+  /* Adjust card styling for mobile */
+  .portfolio-section .card {
+    margin-bottom: 15px;
+  }
+
+  .portfolio-section .card-body {
+    padding: 15px;
+  }
+
+  /* Adjust navigation buttons for mobile */
+  .portfolio-section .d-flex.align-items-center.justify-content-end {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .btn-next,
+  .btn-prev {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Add additional breakpoint for smaller screens */
@@ -490,5 +528,29 @@ section .section-title {
 
   .about-section .col-md-5 {
     padding: 0 10px; /* Slightly less padding on very small screens */
+  }
+
+  .portfolio-swiper {
+    padding: 0 5px;
+  }
+
+  /* Adjust image height for smaller screens */
+  .portfolio-section .card .card-img-top {
+    height: 200px;
+  }
+
+  /* Make text smaller on mobile */
+  .portfolio-section .card-body h6 {
+    font-size: 14px;
+  }
+
+  .portfolio-section .card-body p {
+    font-size: 13px;
+  }
+
+  /* Adjust button size */
+  .portfolio-button {
+    font-size: 13px;
+    padding: 8px 16px;
   }
 }

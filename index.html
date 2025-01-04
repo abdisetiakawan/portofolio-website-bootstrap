@@ -559,26 +559,30 @@
     <script src="./styles/style.js"></script>
     <script>
       var swiper = new Swiper(".portfolio-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1, // Default untuk mobile
+        spaceBetween: 20,
         navigation: {
           nextEl: ".btn-prev",
           prevEl: ".btn-next",
         },
         autoplay: {
-          // Menambahkan autoplay
-          delay: 3000, // Waktu delay antara setiap slide (dalam milidetik)
-          disableOnInteraction: false, // Memastikan autoplay tetap berjalan meskipun user berinteraksi dengan slider
+          delay: 3000,
+          disableOnInteraction: false,
         },
         // Responsive breakpoints
         breakpoints: {
-          // when window width is >= 320px
-          320: {
+          // when window width is >= 576px
+          576: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          // when window width is >= 480px
-          480: {
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 992px
+          992: {
             slidesPerView: 3,
             spaceBetween: 30,
           },
