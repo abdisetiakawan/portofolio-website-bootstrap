@@ -284,6 +284,140 @@
       </div>
     </section>
 
+    <!-- Project individual -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <p class="text-orange fw-semibold">Recent Projects</p>
+        <h2 class="section-title">My Portfolio</h2>
+
+        <div class="swiper portfolio-swiper my-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/header-image.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="btn btn-outline-contact portfolio-button text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card bg-light">
+                <div class="card-body">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3"
+                  />
+                  <h6 class="fw-bold">Project 1</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Atque dolore harum aliquid, mollitia neque cumque
+                  </p>
+
+                  <a
+                    href="#"
+                    class="portfolio-button btn btn-outline-contact text-orange d-inline-flex gap-2"
+                    >View Details <i class="bx bx-right-arrow-alt fs-4"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end gap-3 mt-3">
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-next"
+            >
+              <i class="bx bx-left-arrow-alt fs-5"></i>
+            </button>
+            <button
+              class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+            >
+              <i class="bx bx-right-arrow-alt fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact me -->
     <section class="contact-section bg-light" id="contact">
       <div class="container">
@@ -424,22 +558,30 @@
     <!-- Initialize Swiper -->
     <script src="./styles/style.js"></script>
     <script>
-      new Swiper(".portfolio-swiper", {
-        slidesPerView: 1,
+      var swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 3,
         spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".btn-prev",
+          prevEl: ".btn-next",
+        },
+        autoplay: {
+          // Menambahkan autoplay
+          delay: 3000, // Waktu delay antara setiap slide (dalam milidetik)
+          disableOnInteraction: false, // Memastikan autoplay tetap berjalan meskipun user berinteraksi dengan slider
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
         },
       });
     </script>

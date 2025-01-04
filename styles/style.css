@@ -436,7 +436,7 @@ section .section-title {
 /* About Section Mobile Fixes */
 @media (max-width: 768px) {
   * {
-    padding: 1px;
+    padding: 0;
   }
   .about-section .row {
     flex-direction: column;
